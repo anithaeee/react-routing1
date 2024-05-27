@@ -6,6 +6,7 @@ import Bevarages from '../components/Bevarages.js';
 import Cleaninghousehold from '../components/Cleaninghousehold.js';
 import '../components/Component.css';
 import { Dropdown } from 'primereact/dropdown';
+import {BrowserRouter as Router,Link} from 'react-router-dom';
 const Home = () => {
   const dailyneeds = [
     {name: 'Groceries', code: 'gr'},
@@ -19,8 +20,8 @@ const Home = () => {
        <div>
         <h1>Welcome to Supermart</h1>
        </div>
-       <div className="drpdwn">
-         <Dropdown options={dailyneeds} optionLabel="name" />
+       <div>
+         <Dropdown options={dailyneeds} optionLabel="name" placeholder="Select a Name" className="w-full md:w-14rem"/>
        </div>
      </div>
   )

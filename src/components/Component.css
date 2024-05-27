@@ -1,6 +1,8 @@
 .drpdwm {
   float: left;
+  border-color: black;
 }
 .bgr {
-  background-color: aquamarine;
+  width: 100%;
+  height: 673px;
 }
